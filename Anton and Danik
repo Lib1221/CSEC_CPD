@@ -1,0 +1,11 @@
+f=  input()
+x= input()
+x = list(x)
+y = x.count('A')
+z = x.count('D')
+if y == z:
+    print("Friendship")
+elif y > z:
+    print("Anton")
+else:
+    print("Danik")
