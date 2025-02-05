@@ -1,0 +1,8 @@
+n, m = 0, 0
+for i in range(5):
+    x = list(map(int, input().split()))
+    for j in range(5):
+        if x[j] == 1:
+            n, m = i, j
+ 
+print(abs(n - 2) + abs(m - 2))
