@@ -1,0 +1,14 @@
+x = input()
+l = 0
+u = 0
+for i in x:
+    if 65<=ord(i)<=92:
+        u+=1
+    else:
+        l+=1
+if l == u:
+    print(x.lower())
+elif l < u:
+    print(x.upper())
+else:
+    print(x.lower())
