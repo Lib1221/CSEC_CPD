@@ -1,0 +1,21 @@
+x = int(input())
+num = list(map(int, input().split()))
+n = 0
+m = 0
+l, r = 0, len(num)-1
+flag = 0
+while l <= r:
+    if num[l] > num[r]:
+        if flag % 2 == 0:
+            n+=num[l]
+        else:
+            m+=num[l]
+        l+=1
+    else:
+        if flag % 2 == 0:
+            n+=num[r]
+        else:
+            m+=num[r]
+        r-=1
+    flag+=1
+print(n, m)
